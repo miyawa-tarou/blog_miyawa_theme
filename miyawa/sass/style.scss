@@ -1,0 +1,325 @@
+@charset "utf-8";
+/*
+theme Name: Miyawa
+Author: Miyawa
+Description: original theme
+version： 1.0.0
+*/
+
+$wrapperWidth: 1090px;
+$bgColor: #f1f1f1;
+$border: 1px #999 solid;
+
+$pcWidth: $wrapperWidth;
+$spWidth: $wrapperWidth - 1px;
+
+body {
+  margin:0;
+  padding: 0;
+  background-color: #fff;
+}
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+#header {
+  #header-title {
+    @media screen and (min-width: $pcWidth) {width: 100%}
+    @media screen and (max-width: $spWidth) {width: auto;}
+
+    @media screen and (min-width: $pcWidth) {
+      h1 {
+        font-size: 32px;
+        width: $wrapperWidth;
+        background: #fff url("https://miyawa-tarou.com/img/icon.jpg") no-repeat;
+        background-size: 42px 42px;
+        margin: 10px auto;
+        text-indent: 50px;
+      }
+    }
+    @media screen and (max-width: $spWidth) {
+      h1 {
+        font-size: 24px;
+        text-align: center;
+        margin: 5px auto;
+      }
+    }
+  }
+  #header-photo {
+    width: 100%;
+    margin:0;
+    padding: 0;
+    img {
+      width: 100%;
+      display: block;
+
+      @media screen and (min-width: $pcWidth) {
+        min-width: $wrapperWidth;
+      }
+    }
+  }
+  #heaader-menu {
+    width: 100%;
+    background-color: #555;
+    padding:0;
+    font-size:16px;
+
+    @media screen and (min-width: $pcWidth) {
+      height: 40px;
+      line-height: 40px;
+    }
+    @media screen and (max-width: $spWidth) {
+      line-height: 30px;
+    }
+
+    #heaader-menu-list {
+      margin: 0 auto;
+      text-align: center;
+
+      @media screen and (min-width: $pcWidth) {
+        width: $wrapperWidth;
+      }
+      @media screen and (max-width: $spWidth) {
+        width: 100%;
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #EEE;
+        li {
+          @media screen and (min-width: $pcWidth) {width: 150px;}
+          @media screen and (max-width: $spWidth) {width: 49%;}
+          display: inline-block;
+          text-align: center;
+          cursor: pointer;
+        }
+      }
+      li:hover {
+        color: #333;
+        background-color: $bgColor;
+        font-weight: bold;
+      }
+    }
+  }
+
+}
+
+#body {
+  width: 100%;
+  background-color: $bgColor;
+
+  #body-contents {
+    #container {
+      @media screen and (min-width: $pcWidth) {float: left;}
+      @media screen and (max-width: $spWidth) {
+        width: 100%;
+        padding-top: 10px;
+      }
+
+      .container-articles {
+        background-color: #FFF;
+        padding: 17px;
+        font-size: 14px;
+        border: $border;
+        @media screen and (min-width: $pcWidth) {
+          margin: 10px;
+          width: 750px;
+        }
+        @media screen and (max-width: $spWidth) {
+          margin: 10px auto;
+          width: 83%;
+        }
+
+        .container-articles-header a {
+          color: #333;
+          text-decoration: none;
+
+          .container-articles-header-title {
+            h1, h2 {
+              font-size: 20px;
+              margin: 0;
+            }
+            .container-articles-header-title-date {
+              font-size: 10px;
+            }
+          }
+        }
+        .container-articles-content {
+          h3 {
+
+          }
+        }
+      }
+    }
+    #sidebar {
+      width: 250px;
+      margin-top: 10px;
+      margin-right: 10px;
+      font-size: 13px;
+      float: right;
+      background-color: #fff;
+      border: $border;
+      @media screen and (min-width: $pcWidth) {width: 250px;}
+      @media screen and (max-width: $spWidth) {width: 95%;}
+
+      li {
+        list-style-type: none;
+      }
+      h2.widgettitle {
+        font-size: 16px;
+        width: 100%;
+        background-color: #999;
+        color: white;
+      }
+      ul {
+        padding: 10px;
+        li {
+          border-bottom: 1px solid #ddd;
+          border-top: 1px solid #ddd;
+          padding: 1px 0;
+        }
+      }
+    }
+
+    @media screen and (min-width: $pcWidth) {
+      width: $wrapperWidth;
+      padding: 10px;
+    }
+    @media screen and (max-width: $spWidth) {
+      width: 100%;
+    }
+    margin: 0 auto;
+
+    #body-contents-description {
+      @media screen and (min-width: $pcWidth) {
+        text-align: center;
+        font-size: 14px;
+      }
+      @media screen and (max-width: $spWidth) {
+        width: 90%;
+        margin: auto;
+        font-size: 13px;
+      }
+
+      padding: 10px;
+    }
+
+    #body-contents-title {
+      margin: auto;
+      text-align: center;
+    }
+    #body-contents-main {
+      margin: 10px auto;
+
+      li {
+        display: inline-block;
+        @media screen and (min-width: $pcWidth) {
+          width: 300px;
+          height: 300px;
+          margin: 10px;
+        }
+
+        @media screen and (max-width: $spWidth) {
+          width: 44%;
+          margin: 2% 1%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      li:hover {
+        filter: blur(1px) brightness(1.05);
+        transform: scale(1.03);
+      }
+    }
+
+    .body-contents-workYear {
+      @media screen and (min-width: $pcWidth) {margin: 24px 0 0 0;}
+      @media screen and (max-width: $spWidth) {text-align: center;}
+    }
+    .body-contents-worksList {
+      list-style-type: none;
+      @media screen and (max-width: $spWidth) {
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        margin: 10px 0;
+
+        @media screen and (min-width: $pcWidth) {
+          .body-contents-worksList-description {
+            float: right;
+            width: 50%;
+          }
+          .body-contents-worksList-visual {
+            float: left;
+            width: 50%;
+            text-align: center;
+
+            img, video {
+              background-color: #FFF;
+              max-width: 500px;
+            }
+          }
+        }
+        @media screen and (max-width: $spWidth) {
+          .body-contents-worksList-description{
+            width:80%;
+            margin: auto;
+            h3 {
+              font-size: 15px;
+            }
+
+            p {
+              text-indent: 15px;
+              font-size: 13px;
+              margin: 5px 0;
+            }
+          }
+          .body-contents-worksList-visual{
+            text-align: center;
+            img, video{
+              background-color: #FFF;
+              max-width:80%;
+            }
+          }
+        }
+      }
+      li:after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+    }
+    .pagination {
+      text-align: center;
+      ul li {
+        display: inline-block;
+        width: 28px;
+        line-height: 30px;
+        font-size: 15px;
+        border-radius: 3px;
+        background-color: #FFF;
+        border: $border;
+        a {
+          color: #999;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  #body-contents:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+}
+
+#footer {
+  width: 100%;
+  background-color: $bgColor;
+  text-align: center;
+}

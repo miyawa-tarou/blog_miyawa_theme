@@ -1,0 +1,402 @@
+@charset "UTF-8";
+/*
+theme Name: Miyawa
+Author: Miyawa
+Description: original theme
+version： 1.0.0
+*/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+@media screen and (min-width: 1090px) {
+  #header #header-title {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1089px) {
+  #header #header-title {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 1090px) {
+  #header #header-title h1 {
+    font-size: 32px;
+    width: 1090px;
+    background: #fff url("https://miyawa-tarou.com/img/icon.jpg") no-repeat;
+    background-size: 42px 42px;
+    margin: 10px auto;
+    text-indent: 50px;
+  }
+}
+
+@media screen and (max-width: 1089px) {
+  #header #header-title h1 {
+    font-size: 24px;
+    text-align: center;
+    margin: 5px auto;
+  }
+}
+
+#header #header-photo {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#header #header-photo img {
+  width: 100%;
+  display: block;
+}
+
+@media screen and (min-width: 1090px) {
+  #header #header-photo img {
+    min-width: 1090px;
+  }
+}
+
+#header #heaader-menu {
+  width: 100%;
+  background-color: #555;
+  padding: 0;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 1090px) {
+  #header #heaader-menu {
+    height: 40px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 1089px) {
+  #header #heaader-menu {
+    line-height: 30px;
+  }
+}
+
+#header #heaader-menu #heaader-menu-list {
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (min-width: 1090px) {
+  #header #heaader-menu #heaader-menu-list {
+    width: 1090px;
+  }
+}
+
+@media screen and (max-width: 1089px) {
+  #header #heaader-menu #heaader-menu-list {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+#header #heaader-menu #heaader-menu-list a {
+  text-decoration: none;
+  color: #EEE;
+}
+
+#header #heaader-menu #heaader-menu-list a li {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1090px) {
+  #header #heaader-menu #heaader-menu-list a li {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 1089px) {
+  #header #heaader-menu #heaader-menu-list a li {
+    width: 49%;
+  }
+}
+
+#header #heaader-menu #heaader-menu-list li:hover {
+  color: #333;
+  background-color: #f1f1f1;
+  font-weight: bold;
+}
+
+#body {
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+#body #body-contents {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1090px) {
+  #body #body-contents #container {
+    float: left;
+  }
+}
+
+@media screen and (max-width: 1089px) {
+  #body #body-contents #container {
+    width: 100%;
+    padding-top: 10px;
+  }
+}
+
+#body #body-contents #container .container-articles {
+  background-color: #FFF;
+  padding: 17px;
+  font-size: 14px;
+  border: 1px #999 solid;
+}
+
+@media screen and (min-width: 1090px) {
+  #body #body-contents #container .container-articles {
+    margin: 10px;
+    width: 750px;
+  }
+}
+
+@media screen and (max-width: 1089px) {
+  #body #body-contents #container .container-articles {
+    margin: 10px auto;
+    width: 83%;
+  }
+}
+
+#body #body-contents #container .container-articles .container-articles-header a {
+  color: #333;
+  text-decoration: none;
+}
+
+#body #body-contents #container .container-articles .container-articles-header a .container-articles-header-title h1, #body #body-contents #container .container-articles .container-articles-header a .container-articles-header-title h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+#body #body-contents #container .container-articles .container-articles-header a .container-articles-header-title .container-articles-header-title-date {
+  font-size: 10px;
+}
+
+#body #body-contents #sidebar {
+  width: 250px;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 13px;
+  float: right;
+  background-color: #fff;
+  border: 1px #999 solid;
+}
+
+@media screen and (min-width: 1090px) {
+  #body #body-contents #sidebar {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 1089px) {
+  #body #body-contents #sidebar {
+    width: 95%;
+  }
+}
+
+#body #body-contents #sidebar li {
+  list-style-type: none;
+}
+
+#body #body-contents #sidebar h2.widgettitle {
+  font-size: 16px;
+  width: 100%;
+  background-color: #999;
+  color: white;
+}
+
+#body #body-contents #sidebar ul {
+  padding: 10px;
+}
+
+#body #body-contents #sidebar ul li {
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  padding: 1px 0;
+}
+
+@media screen and (min-width: 1090px) {
+  #body #body-contents {
+    width: 1090px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 1089px) {
+  #body #body-contents {
+    width: 100%;
+  }
+}
+
+#body #body-contents #body-contents-description {
+  padding: 10px;
+}
+
+@media screen and (min-width: 1090px) {
+  #body #body-contents #body-contents-description {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1089px) {
+  #body #body-contents #body-contents-description {
+    width: 90%;
+    margin: auto;
+    font-size: 13px;
+  }
+}
+
+#body #body-contents #body-contents-title {
+  margin: auto;
+  text-align: center;
+}
+
+#body #body-contents #body-contents-main {
+  margin: 10px auto;
+}
+
+#body #body-contents #body-contents-main li {
+  display: inline-block;
+}
+
+@media screen and (min-width: 1090px) {
+  #body #body-contents #body-contents-main li {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 1089px) {
+  #body #body-contents #body-contents-main li {
+    width: 44%;
+    margin: 2% 1%;
+  }
+  #body #body-contents #body-contents-main li img {
+    width: 100%;
+  }
+}
+
+#body #body-contents #body-contents-main li:hover {
+  filter: blur(1px) brightness(1.05);
+  transform: scale(1.03);
+}
+
+@media screen and (min-width: 1090px) {
+  #body #body-contents .body-contents-workYear {
+    margin: 24px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 1089px) {
+  #body #body-contents .body-contents-workYear {
+    text-align: center;
+  }
+}
+
+#body #body-contents .body-contents-worksList {
+  list-style-type: none;
+}
+
+@media screen and (max-width: 1089px) {
+  #body #body-contents .body-contents-worksList {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+#body #body-contents .body-contents-worksList li {
+  margin: 10px 0;
+}
+
+@media screen and (min-width: 1090px) {
+  #body #body-contents .body-contents-worksList li .body-contents-worksList-description {
+    float: right;
+    width: 50%;
+  }
+  #body #body-contents .body-contents-worksList li .body-contents-worksList-visual {
+    float: left;
+    width: 50%;
+    text-align: center;
+  }
+  #body #body-contents .body-contents-worksList li .body-contents-worksList-visual img, #body #body-contents .body-contents-worksList li .body-contents-worksList-visual video {
+    background-color: #FFF;
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 1089px) {
+  #body #body-contents .body-contents-worksList li .body-contents-worksList-description {
+    width: 80%;
+    margin: auto;
+  }
+  #body #body-contents .body-contents-worksList li .body-contents-worksList-description h3 {
+    font-size: 15px;
+  }
+  #body #body-contents .body-contents-worksList li .body-contents-worksList-description p {
+    text-indent: 15px;
+    font-size: 13px;
+    margin: 5px 0;
+  }
+  #body #body-contents .body-contents-worksList li .body-contents-worksList-visual {
+    text-align: center;
+  }
+  #body #body-contents .body-contents-worksList li .body-contents-worksList-visual img, #body #body-contents .body-contents-worksList li .body-contents-worksList-visual video {
+    background-color: #FFF;
+    max-width: 80%;
+  }
+}
+
+#body #body-contents .body-contents-worksList li:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#body #body-contents .pagination {
+  text-align: center;
+}
+
+#body #body-contents .pagination ul li {
+  display: inline-block;
+  width: 28px;
+  line-height: 30px;
+  font-size: 15px;
+  border-radius: 3px;
+  background-color: #FFF;
+  border: 1px #999 solid;
+}
+
+#body #body-contents .pagination ul li a {
+  color: #999;
+  text-decoration: none;
+}
+
+#body #body-contents:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#footer {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+}
